@@ -22,7 +22,7 @@
 }
 
 .form-btn {
-    width: 415px;
+    width: 500px;
 }
 
 .account-title {
@@ -30,4 +30,47 @@
     font-size: 18px;
     font-weight: 500;
     color: rgb(184, 28, 28);
+}
+
+@media only screen and (max-width: 768px) {
+    .form-container {
+        width: 400px;
+        padding-top: 10px;
+        margin: 0 auto;
+        /* border: 3px solid #a6b2b9; */
+        box-sizing: border-box;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .form-btn {
+        width: 400px;
+        text-align: center;
+        font-size: 10px;
+        font-style: italic;
+
+    }
+
+    .info-text {
+        font-size: 15px;
+        /* text-align: center; */
+    }
+
+    .account-title {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(184, 28, 28);
+    }
+
+    .extra-title {
+        font-size: 15px;
+    }
 }

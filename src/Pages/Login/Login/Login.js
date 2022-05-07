@@ -61,7 +61,7 @@ const Login = () => {
         <div className='container w-50 mx-auto shadow-lg p-3 mb-4 bg-body rounded mt-5'>
             <PageTitle title="Login"></PageTitle>
             <h2 className='text-dark mb-4 text-center mt-2 form-title'>Please Login</h2>
-            <Form className='container w-50 mx-auto' onSubmit={handleSubmit}>
+            <Form className='container w-50 mx-auto form-section' onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label><h6 className='mt-1 fst-italic fw-bold'>Email address</h6></Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
@@ -70,15 +70,15 @@ const Login = () => {
                     <Form.Label><h6 className='mt-1 fst-italic fw-bold'>Password</h6></Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Form.Text className="text-muted">
+                <Form.Text className="text-muted ">
                     <p className='info-text'>We'll never share your details with anyone else.</p>
                 </Form.Text>
-                <Button className='form-btn px-5 my-3 text-uppercase fs-6 fst-italic btn-lg mx-auto d-block w-50' variant="dark" type="submit">
+                <Button className='form-btn btn btn-dark text-center px-5 my-3 fs-6 fst-italic w-50 mx-auto d-block' type="submit">
                     LogIn
                 </Button>
             </Form>
 
-            <p className='text-center'>New to Gauche Fruit Center? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Create an account</Link> </p>
+            <p className='text-center extra-title'>New to Gauche Fruit Center? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Create an account</Link> </p>
             <p className='text-center'>Forget Password?<button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}> Reset Password</button> </p>
             <SocialLogin></SocialLogin>
             <ToastContainer />
