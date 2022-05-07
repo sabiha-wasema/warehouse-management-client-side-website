@@ -1,0 +1,33 @@
+.form-container {
+    width: 600px;
+    padding-top: 20px;
+    margin: 0 auto;
+    /* border: 3px solid #a6b2b9; */
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.form-title {
+    font-size: 42px;
+    color: rgb(184, 28, 28);
+    font-weight: 600;
+    text-align: center;
+}
+
+.info-text {
+    color: rgb(184, 28, 28);
+}
+
+.form-btn {
+    width: 415px;
+}
+
+.account-title {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(184, 28, 28);
+}

@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "picture": "https://i.ibb.co/SQ4SJty/apple.jpg",
+        "name": "Red Apple",
+        "price": "400",
+        "quantity": "1000",
+        "supplier": "Sabbir",
+        "description": "we offer the best cookies cake."
+    },
+    {
+        "id": 2,
+        "picture": "https://i.ibb.co/k0jP6P9/dragon.jpg",
+        "name": "Dragon fruit",
+        "price": "1000",
+        "quantity": "500",
+        "supplier": "Rahim",
+        "description": "Our tasty cakes are so tasty."
+    },
+    {
+        "id": 3,
+        "picture": "https://i.ibb.co/BjgCYjs/grapes.jpg",
+        "name": "Grapes",
+        "price": "400",
+        "quantity": "5000",
+        "supplier": "Mr. kamal",
+        "description": "Checkout our tasty weeding cakes"
+    },
+    {
+        "id": 4,
+        "picture": "https://i.ibb.co/YPXFqGb/jackfruit.jpg",
+        "name": "Jackfruit",
+        "price": "500",
+        "quantity": "4000",
+        "supplier": "Mr. jamal",
+        "description": "Learn many recipes"
+    },
+    {
+        "id": 5,
+        "picture": "https://i.ibb.co/MZ0pk3W/mango.jpg",
+        "name": "Mango",
+        "price": "300",
+        "quantity": "5000",
+        "supplier": "Weins",
+        "description": "Checkout our tasty birthday cakes"
+    },
+    {
+        "id": 6,
+        "picture": "https://i.ibb.co/CBVGPrv/pineaaple.jpg",
+        "name": "Pineaaple",
+        "price": "200",
+        "quantity": "1000",
+        "supplier": "Mark",
+        "description": "See our menu planner"
+    }
+]

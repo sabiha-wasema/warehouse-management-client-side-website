@@ -1,0 +1,14 @@
+.logo-title {
+    color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+.logo {
+    color: rgb(184, 28, 28);
+    font-family: 'Poppins', sans-serif;
+}
+
+.profile-img {
+    width: 60px;
+}
