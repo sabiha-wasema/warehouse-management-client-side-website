@@ -34,16 +34,16 @@ const SocialLogin = () => {
                 <div style={{ height: '1px' }} className='line'></div>
             </div>
             {errorElement}
-            <div className='text-center pb-4'>
+            <div className='text-center pb-4 social-btn'>
                 <button
                     onClick={() => signInWithGoogle()}
-                    className='btn btn-dark w-50 d-block mx-auto my-2 p-2'>
+                    className='btn btn-dark btn-next mx-auto d-block my-2 p-2'>
                     <img style={{ width: '20px' }} src={google} alt="" />
                     <span className='px-2'>Google SignIn</span>
                 </button>
                 <button
                     onClick={() => signInWithGithub()}
-                    className='btn btn-dark w-50 d-block mx-auto'>
+                    className='btn btn-dark btn-previous mx-auto d-block'>
                     <img style={{ width: '30px' }} src={github} alt="" />
                     <span className='px-2'>Github SignIn</span>
                 </button>

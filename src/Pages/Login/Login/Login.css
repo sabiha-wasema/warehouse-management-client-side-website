@@ -48,7 +48,7 @@
 
 }
 
-@media (max-width: 576px) {
+@media (min-width: 576px) {
 
     .form-btn {
         width: 400px;
