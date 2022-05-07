@@ -13,7 +13,7 @@ const ProductDetails = () => {
     }, [])
     return (
         <div>
-            <div className='container mx-auto product shadow-lg p-3 mb-3 bg-white rounded-4'>
+            <div className='container w-50 mx-auto mb-4 mt-4 product shadow-lg p-3 mb-3 bg-white rounded-4'>
                 <img className='img-part' src={product.picture} alt="" />
                 <h2 className='font-italic'>{product.name}</h2>
                 <p className=''>Price: ${product.price}</p>
