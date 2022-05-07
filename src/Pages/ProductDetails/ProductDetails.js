@@ -1,13 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 const ProductDetails = () => {
-
-
     const { productId } = useParams();
+    const [product, setProduct] = useState({});
+    useEffect(() => {
+        const url = `http://localhost:5000/product/${productId}`;
+
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setProduct(data));
+    }, [])
     return (
         <div>
-            <h2>Welcome to detail: {productId}</h2>
+            <div className='container mx-auto product shadow-lg p-3 mb-3 bg-white rounded-4'>
+                <img className='img-part' src={product.picture} alt="" />
+                <h2 className='font-italic'>{product.name}</h2>
+                <p className=''>Price: ${product.price}</p>
+                <p className='text-primary fs-5'><small>{product.description}</small></p>
+                <p>Quantity: <span className='item-quantity'>{product.quantity}</span></p>
+                <p>Supplier Name: {product.supplier}</p>
+            </div>
 
             <div className='text-center'>
                 <Link to="/checkout">

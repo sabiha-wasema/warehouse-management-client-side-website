@@ -4,7 +4,7 @@ import PageTitle from '../../Shared/PageTitle/PageTitle';
 import './Product.css';
 
 const Product = ({ product }) => {
-    const { id, name, picture, description, price, quantity, supplier } = product;
+    const { _id, name, picture, description, price, quantity, supplier } = product;
     const navigate = useNavigate();
     const navigateToProductDetails = id => {
         navigate(`/product/${id}`);
@@ -18,7 +18,7 @@ const Product = ({ product }) => {
             <p className='text-primary fs-5'><small>{description}</small></p>
             <p>Quantity: <span className='item-quantity'>{quantity}</span></p>
             <p>Supplier Name: {supplier}</p>
-            <button onClick={() => navigateToProductDetails(id)} className='btn btn-dark mb-3 px-3'>Update</button>
+            <button onClick={() => navigateToProductDetails(_id)} className='btn btn-dark mb-3 px-3'>Update</button>
         </div>
     );
 };
