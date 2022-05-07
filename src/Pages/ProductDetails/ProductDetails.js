@@ -15,11 +15,13 @@ const ProductDetails = () => {
         <div>
             <div className='container w-50 mx-auto mb-4 mt-4 product shadow-lg p-3 mb-3 bg-white rounded-4'>
                 <img className='img-part' src={product.picture} alt="" />
+                <p>Id: {productId}</p>
                 <h2 className='font-italic'>{product.name}</h2>
                 <p className=''>Price: ${product.price}</p>
                 <p className=' fs-5'><small>{product.description}</small></p>
                 <p>Quantity: <span className='item-quantity'>{product.quantity}</span></p>
                 <p>Supplier Name: {product.supplier}</p>
+                <button className='px-4 py-2 bg-danger rounded '>Delivered</button>
             </div>
 
             <div className='text-center'>

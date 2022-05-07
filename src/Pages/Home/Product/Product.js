@@ -15,7 +15,7 @@ const Product = ({ product }) => {
             <img className='img-part' src={picture} alt="" />
             <h2 className='font-italic'>{name}</h2>
             <p className=''>Price: ${price}</p>
-            <p className=' fs-5'><small>{description}</small></p>
+            <p className='fs-5'><small>{description}</small></p>
             <p>Quantity: <span className='item-quantity'>{quantity}</span></p>
             <p>Supplier Name: {supplier}</p>
             <button onClick={() => navigateToProductDetails(_id)} className='btn btn-dark mb-3 px-3'>Update</button>
