@@ -17,7 +17,7 @@ const ProductDetails = () => {
                 <img className='img-part' src={product.picture} alt="" />
                 <h2 className='font-italic'>{product.name}</h2>
                 <p className=''>Price: ${product.price}</p>
-                <p className='text-primary fs-5'><small>{product.description}</small></p>
+                <p className=' fs-5'><small>{product.description}</small></p>
                 <p>Quantity: <span className='item-quantity'>{product.quantity}</span></p>
                 <p>Supplier Name: {product.supplier}</p>
             </div>
