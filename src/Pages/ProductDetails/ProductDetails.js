@@ -23,7 +23,6 @@ const ProductDetails = () => {
                 <p>Supplier Name: {product.supplier}</p>
                 <button className='px-4 py-2 bg-danger rounded '>Delivered</button>
             </div>
-
             <div className='text-center'>
                 <Link to="/checkout">
                     <button className='btn btn-dark'>Proceed Checkout</button>
