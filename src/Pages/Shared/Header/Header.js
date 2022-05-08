@@ -20,7 +20,7 @@ const Header = () => {
     return (
         <>
             <Navbar collapseOnSelect expand="lg" sticky='top' bg="dark" variant="dark">
-                <Container>
+                <Container className="w-75 mx-auto">
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">

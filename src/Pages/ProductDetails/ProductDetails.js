@@ -30,10 +30,15 @@ const ProductDetails = () => {
             </div>
             <div className='text-center mt-5'>
             <AddProduct></AddProduct>
-                {/* <Link to="/addproduct">
+                {/*  <Link to="/addproduct">
                     <AddProduct></AddProduct>
-                    {/* <button className='btn btn-dark'>Add Product</button> 
-                </Link> */}
+                </Link>  */}
+               <div className="mt-4">
+               <Link to="/login">
+                <button className='btn btn-dark'>Checkout</button> 
+                </Link> 
+               </div>
+              
             </div>
         </div>
     );

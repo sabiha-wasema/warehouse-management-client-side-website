@@ -8,7 +8,7 @@ import Products from './Pages/Home/Products/Products';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
-import Orders from './Pages/Orders/Orders';
+import Order from './Pages/Order/Order';
 import ProductDetails from './Pages/ProductDetails/ProductDetails';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
@@ -46,6 +46,11 @@ function App() {
          <Route path="/manageproduct" element={
           <RequireAuth>
                <ManageProduct></ManageProduct>
+          </RequireAuth>
+        }></Route>
+        <Route path="/order" element={
+          <RequireAuth>
+              <Order></Order>
           </RequireAuth>
         }></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>

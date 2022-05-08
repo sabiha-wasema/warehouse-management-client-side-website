@@ -9,14 +9,14 @@
 }
 
 .banner-text {
-    height: 50%;
+    height: 30%;
 }
 
-.banner-text h1 {
-    font-size: 4rem;
+.banner-text h2 {
+    font-size: 3rem;
 }
 
-.banner-text h1 span {
+.banner-text h2 span {
     color: rgb(184, 28, 28);
     font-weight: 700;
     font-size: 70px;
@@ -29,8 +29,8 @@
 }
 
 @media (max-width: 768px) {
-    .banner-text h1 {
-        font-size: 3rem;
+    .banner-text h2 {
+        font-size: 2rem;
     }
 
     .banner-text p {
@@ -39,8 +39,8 @@
 }
 
 @media (max-width: 576px) {
-    .banner-text h1 {
-        font-size: 2rem;
+    .banner-text h2 {
+        font-size: 1rem;
     }
 
     .banner-text p {

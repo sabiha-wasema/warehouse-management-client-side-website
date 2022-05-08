@@ -1,6 +1,6 @@
 import React from 'react';
 import About from '../../About/About';
-import Orders from '../../Orders/Orders';
+import Order from '../../Order/Order';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 import Banner from '../Banner/Banner';
 import Blog from '../Blog/Blog';
@@ -13,7 +13,7 @@ const Home = () => {
             <PageTitle title="Home"></PageTitle>
             <Banner></Banner>
             <Products></Products>
-            <Orders></Orders>
+            <Order></Order>
             <About></About>
             <Blog></Blog>
 

@@ -27,6 +27,10 @@ const ManageProduct = () => {
         navigate(`/products/${_id}`)
     }
 
+    const handleAddItem = () => {
+        navigate(`/addproduct`)
+    }
+
     return (
         <div>
             <h1 className="text-center mt-3">Manage Product</h1>
@@ -69,7 +73,10 @@ const ManageProduct = () => {
         </Col>
                 </div>)
             }
-            <button>Add Item</button>
+            <div className="w-75 mx-auto text-center mt-3">
+            <button onClick={handleAddItem} className="btn btn-success">Add Item</button>
+            </div>
+
             
         </div>
     );
