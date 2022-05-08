@@ -14,6 +14,8 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import AddProduct from './Pages/AddProduct/AddProduct';
+import ManageProduct from './Pages/ManageProduct/ManageProduct';
+
 
 function App() {
   return (
@@ -29,7 +31,6 @@ function App() {
             <ProductDetails></ProductDetails>
           </RequireAuth>
         } ></Route>
-        <Route path="/orders" element={<Orders></Orders>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/checkout" element={
@@ -39,7 +40,12 @@ function App() {
         }></Route>
          <Route path="/addproduct" element={
           <RequireAuth>
-        <AddProduct></AddProduct>
+               <AddProduct></AddProduct>
+          </RequireAuth>
+        }></Route>
+         <Route path="/manageproduct" element={
+          <RequireAuth>
+               <ManageProduct></ManageProduct>
           </RequireAuth>
         }></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>

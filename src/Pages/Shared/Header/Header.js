@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import auth from '../../../firebase.init';
 import profile from '../../../images/profile.png';
+import { toast } from 'react-toastify';
 
 
 const Header = () => {
@@ -13,6 +14,7 @@ const Header = () => {
 
     const handleSignOut = () => {
         signOut(auth);
+        toast.success('Logging out Successful', { id: 'logout' });
     }
 
     return (
@@ -29,9 +31,14 @@ const Header = () => {
                         </Nav>
                         <Nav className='px-1 fs-5'>
                             <Nav.Link href="home#products">Products</Nav.Link>
-                            <Nav.Link href="home#orders">Orders</Nav.Link>
                             <Nav.Link as={Link} to="home#about">About</Nav.Link>
                             <Nav.Link as={Link} to="home#blog">Blog</Nav.Link>
+                            {
+                                user && <>
+                                 <Nav.Link as={Link} to="addproduct">Add</Nav.Link>
+                                 <Nav.Link as={Link} to="manageproduct">Manage</Nav.Link>
+                                </>
+                            }
                             {
                                 user ?
                                     <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}> <img className='profile-img' src={profile} alt="" /></button>

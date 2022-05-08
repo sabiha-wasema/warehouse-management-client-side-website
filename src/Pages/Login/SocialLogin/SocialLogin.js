@@ -34,7 +34,7 @@ const SocialLogin = () => {
                 <div style={{ height: '1px' }} className='line'></div>
             </div>
             {errorElement}
-            <div className='text-center pb-4 social-btn'>
+            <div className='d-grid gap-2 w-75 mx-auto text-center pb-4 social-btn'>
                 <button
                     onClick={() => signInWithGoogle()}
                     className='btn btn-dark btn-next mx-auto d-block my-2 p-2'>

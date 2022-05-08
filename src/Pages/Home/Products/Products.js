@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
+import { Link } from 'react-router-dom';
 import Product from '../Product/Product';
 import './Products.css';
 
@@ -25,6 +26,12 @@ const Products = () => {
                         >
                         </Product>)
                     }
+                </div>
+                <div className="text-center mt-4">
+                <Link to="/manageproduct">
+                   
+                   <button className='btn btn-dark'>Manage Product</button> 
+               </Link>
                 </div>
             </div>
         </div>

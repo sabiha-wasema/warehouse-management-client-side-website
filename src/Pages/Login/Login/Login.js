@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef ,useEffect} from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -26,10 +26,9 @@ const Login = () => {
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
-
-    if (user) {
+     if (user) {
         navigate(from, { replace: true });
-    }
+    } 
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -58,13 +57,15 @@ const Login = () => {
 
 
     return (
-        <div className='container w-50 mx-auto shadow-lg p-3 mb-4 bg-body rounded mt-5'>
+        <div className=' container w-50 mx-auto shadow-lg p-3 mb-4 bg-body rounded mt-5'>
             <PageTitle title="Login"></PageTitle>
             <h2 className='text-dark mb-4 text-center mt-2 form-title'>Please Login</h2>
-            <Form className='container w-50 mx-auto form-section' onSubmit={handleSubmit}>
+            <hr className="w-25 mx-auto" style={{ color: "#F98080", height: "2px" }} />
+            <Form className='w-75 mx-auto form-section' onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label><h6 className='mt-1 fst-italic fw-bold'>Email address</h6></Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
+
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label><h6 className='mt-1 fst-italic fw-bold'>Password</h6></Form.Label>
@@ -79,7 +80,7 @@ const Login = () => {
             </Form>
 
             <p className='text-center extra-title'>New to Gauche Fruit Center? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Create an account</Link> </p>
-            <p className='text-center'>Forget Password?<button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}> Reset Password</button> </p>
+            <div className='text-center d-grid gap-2'>Forget Password?<button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}> Reset Password</button> </div>
             <SocialLogin></SocialLogin>
             <ToastContainer />
         </div>
