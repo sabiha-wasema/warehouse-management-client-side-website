@@ -13,7 +13,7 @@ import ProductDetails from './Pages/ProductDetails/ProductDetails';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
-
+import AddProduct from './Pages/AddProduct/AddProduct';
 
 function App() {
   return (
@@ -35,6 +35,11 @@ function App() {
         <Route path="/checkout" element={
           <RequireAuth>
             <Checkout></Checkout>
+          </RequireAuth>
+        }></Route>
+         <Route path="/addproduct" element={
+          <RequireAuth>
+        <AddProduct></AddProduct>
           </RequireAuth>
         }></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
