@@ -1,8 +1,9 @@
 import React from 'react';
+import "./Blog.css";
 
 const Blog = () => {
     return (
-        <div className='w-50 mx-auto shadow-lg bg-white text-center mt-4 p-3'>
+        <div className='blog-section mx-auto shadow-lg bg-white text-center mt-4 p-3'>
             <h1 className='fs-1 font-italic font-weight-bold'>Answer to the Question: </h1>
             <div className='mt-4 px-3 mb-2'>
                 <h3>Q: Difference between javascript and nodejs.</h3>

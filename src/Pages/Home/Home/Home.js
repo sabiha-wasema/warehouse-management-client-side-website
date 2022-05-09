@@ -13,7 +13,6 @@ const Home = () => {
             <PageTitle title="Home"></PageTitle>
             <Banner></Banner>
             <Products></Products>
-            <Order></Order>
             <About></About>
             <Blog></Blog>
 

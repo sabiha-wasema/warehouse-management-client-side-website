@@ -1,0 +1,12 @@
+.blog-section {
+    max-width: 50%;
+    max-height: 100%;
+}
+
+@media only screen and (max-width : 576px) {
+    .blog-section {
+        max-width: 50%;
+        max-height: 100%;
+        padding: 5px;
+    }
+}
