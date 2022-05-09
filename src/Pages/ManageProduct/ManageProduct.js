@@ -54,10 +54,10 @@ const ManageProduct = () => {
                                                 Price : ${product.price}
                                             </Card.Text>
                                             <Card.Text>
-                                                Quantity : ${product.quantity}
+                                                Quantity : {product.quantity}
                                             </Card.Text>
                                             <Card.Text>
-                                                Supplier : ${product.supplier}
+                                                Supplier : {product.supplier}
                                             </Card.Text>
                                         </Card.Body>
                                         <div className="d-grid gap-2 mb-3 mx-4 w-50 mx-auto">
