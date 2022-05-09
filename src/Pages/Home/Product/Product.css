@@ -15,9 +15,12 @@
 }
 
 .img-part {
-    width: 400px;
+    /* width: 400px; */
     padding: 7px;
-    border-radius: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    max-width: 400px;
+    max-height: 250px;
 }
 
 .item-quantity {

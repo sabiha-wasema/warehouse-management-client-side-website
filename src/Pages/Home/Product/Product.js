@@ -11,9 +11,9 @@ const Product = ({ product }) => {
         navigate(`/product/${id}`);
     }
     return (
-        <div className='product shadow-lg p-2 mb-3 bg-white rounded-4'>
+        <div className='product shadow-lg px-2 text-center mb-3 bg-white rounded-3'>
             <PageTitle title="Product"></PageTitle>
-            <img className='img-part px-4 py-3' src={picture} alt="" />
+            <img className='img-part px-5 py-3' src={picture} alt="" />
             <h2 className='font-italic'>{name}</h2>
             <p className=''>Price: ${price}</p>
             <p className='fs-5 px-3'><small>{description}</small></p>

@@ -1,4 +1,5 @@
 .products-container {
+    /* max-width: 600px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
@@ -7,6 +8,7 @@
 /* make products responsive */
 @media only screen and (max-width:576px) {
     .products-container {
+
         grid-template-columns: repeat(1, 1fr);
     }
 }
