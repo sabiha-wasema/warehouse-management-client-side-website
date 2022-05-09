@@ -7,7 +7,7 @@ const ProductDetails = () => {
     const { productId } = useParams();
     const [product, setProduct] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://secure-dusk-12053.herokuapp.com/product/${productId}`;
 
         fetch(url)
             .then(res => res.json())

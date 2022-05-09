@@ -1,5 +1,5 @@
 
-Welcome to Gauche Fruit Center. This is a warehouse website. This repository contains client site code. [Live link](https://github.com/facebook/create-react-app).
+Welcome to Gauche Fruit Center. This is a warehouse website. This repository contains client site code. [Live link](https://gauche-fruit-center.web.app/).
 
 Features: 
    - A responsive full-stack website with firebase authentication.
@@ -14,4 +14,4 @@ Technology:
   - MongoDB
   - Firebase
 
-Find here server side code ()
+Find here server side code (https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-sabiha-wasema)
