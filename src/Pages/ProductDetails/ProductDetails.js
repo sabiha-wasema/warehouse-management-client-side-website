@@ -19,13 +19,12 @@ const ProductDetails = () => {
     return (
         <div>
             <div className=' container mx-auto w-50 mb-2 mt-4 product shadow-lg p-3 bg-white rounded-4'>
-                <h2>You are about to book: {product.name}</h2>
 
                 <img className='img-part' src={product.picture} alt="" />
                 <p>Id: {productId}</p>
                 <h2 className='font-italic'>{product.name}</h2>
                 <p className=''>Price: ${product.price}</p>
-                <p className=' fs-5'><small>{product.description}</small></p>
+                <p className=' fs-6'><small>{product.description}</small></p>
                 <p>Quantity:  <span className='item-quantity'>{
                     product.quantity ? product.quantity : "Sold out"
                 }
@@ -39,10 +38,18 @@ const ProductDetails = () => {
                 {/*  <Link to="/addproduct">
                     <AddProduct></AddProduct>
                 </Link>  */}
-                <div className="mt-4">
-                    <Link to={`/checkout/${productId}`}>
-                        <button className='btn btn-dark'>Proceed Checkout</button>
-                    </Link>
+                <div className="mt-4  text-center">
+                    <div className='mb-2'>
+                        <Link to={`/checkout/${productId}`}>
+                            <button className='btn btn-dark'>Proceed Checkout</button>
+                        </Link>
+                    </div>
+
+                    <div >
+                        <Link to="/manageproduct">
+                            <button className='btn btn-dark'>Manage Product</button>
+                        </Link>
+                    </div>
                 </div>
 
             </div>

@@ -32,7 +32,7 @@ const Header = () => {
                         <Nav className='px-1 fs-5'>
                             <Nav.Link href="home#products">Products</Nav.Link>
                             <Nav.Link as={Link} to="home#about">About</Nav.Link>
-                            <Nav.Link as={Link} to="home#blog">Blog</Nav.Link>
+                            <Nav.Link as={Link} to="blog">Blog</Nav.Link>
                             {
                                 user && <>
                                     <Nav.Link as={Link} to="addproduct">Add</Nav.Link>
