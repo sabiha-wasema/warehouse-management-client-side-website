@@ -1,5 +1,5 @@
 
-Welcome to Gauche Fruit Center. This is a warehouse website. This repository contains client site code. [Live link](https://gauche-fruit-center.web.app/).
+Welcome to Gauche Fruit Center. This is a warehouse website. This repository contains client site code. [Gauche Fruit Center(Live link)](https://gauche-fruit-center.web.app/).
 
 Features: 
    - A responsive full-stack website with firebase authentication.
