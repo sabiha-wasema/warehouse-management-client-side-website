@@ -16,7 +16,7 @@ const Register = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-    const [displayName, setDisplayName] = useState('');
+    // const [displayName, setDisplayName] = useState('');
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
@@ -40,13 +40,13 @@ const Register = () => {
         const password = event.target.password.value;
 
         if (name && email && password && password.length >= 6) {
-        await createUserWithEmailAndPassword(email, password);
-        setDisplayName(name);
-        await updateProfile({ displayName: name });
-        console.log('updated profile');
-        navigate('/home');
+            await createUserWithEmailAndPassword(email, password);
+            // setDisplayName(name);
+            await updateProfile({ displayName: name });
+            console.log('updated profile');
+            navigate('/home');
         }
-        
+
         else {
             toast.error('Password must be at least 6 characters long');
             return;

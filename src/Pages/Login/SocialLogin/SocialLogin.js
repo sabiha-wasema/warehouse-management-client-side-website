@@ -3,7 +3,7 @@ import google from '../../../images/social/google.png';
 import github from '../../../images/social/github.png';
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
-import { useLocation,useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading/Loading';
 import './SocialLogin.css';
 
@@ -26,7 +26,8 @@ const SocialLogin = () => {
     }
 
     if (user || user1) {
-        navigate('/checkout');
+        navigate(from, { replace: true });
+        // navigate('/checkout');
     }
 
     return (

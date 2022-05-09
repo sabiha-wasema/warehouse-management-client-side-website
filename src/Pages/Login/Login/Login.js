@@ -1,4 +1,4 @@
-import React, { useRef ,useEffect} from 'react';
+import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -9,6 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 import axios from 'axios';
+import Loading from '../../Shared/Loading/Loading';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -17,7 +18,7 @@ const Login = () => {
     const location = useLocation();
 
     let from = location.state?.from?.pathname || "/";
-
+    let errorElement;
     const [
         signInWithEmailAndPassword,
         user,
@@ -27,9 +28,19 @@ const Login = () => {
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
-     if (user) {
-        navigate(from, { replace: true });
-    } 
+
+    if (loading || sending) {
+        return <Loading></Loading>
+    }
+
+
+    if (user) {
+        // navigate(from, { replace: true });
+    }
+
+    if (error) {
+        errorElement = <p className='text-danger'>Error: {error?.message}</p>
+    }
 
     const handleSubmit = async event => {
         event.preventDefault();
@@ -38,10 +49,10 @@ const Login = () => {
         // console.log(email, password);
 
         await signInWithEmailAndPassword(email, password);
-        const {data} = await axios.post('http://localhost:5000/login', {email});
+        const { data } = await axios.post('http://localhost:5000/login', { email });
         console.log(data);
         localStorage.setItem('accessToken', data.accessToken);
-        navigate(from, { replace: true }); 
+        navigate(from, { replace: true });
     }
 
     const navigateRegister = event => {
